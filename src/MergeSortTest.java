@@ -48,6 +48,31 @@ public class MergeSortTest {
         checkInputAndOutput(new int[]{5, 3}, new int[]{3, 5});
     }
 
+    @Test
+    public void test3() throws Exception {
+        checkInputAndOutput(new int[]{5, 2, 1, 3}, new int[]{1, 2, 3, 5});
+    }
+
+    @Test
+    public void test4() throws Exception {
+        checkInputAndOutput(new int[]{5, 2, 4, 1, 3}, new int[]{1, 2, 3, 4, 5});
+    }
+
+    @Test
+    public void test5() throws Exception {
+        checkInputAndOutput(new int[]{2, 1, 3}, new int[]{1, 2, 3});
+    }
+
+    @Test
+    public void test6() throws Exception {
+        checkInputAndOutput(new int[]{2, 2, 1, 3}, new int[]{1, 2, 2, 3});
+    }
+
+    @Test
+    public void test7() throws Exception {
+        checkInputAndOutput(new int[]{}, new int[]{});
+    }
+
     private String getCurrentName() {
         return Thread.currentThread()
                 .getStackTrace()[3]
